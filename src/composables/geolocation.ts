@@ -13,7 +13,7 @@ export const useGeolocation = async () => {
 
   const success = (position: GeolocationPosition) => {
     const { coords } = position
-    geolocationStore.updateCoords({ lat: coords.latitude, lon: coords.longitude })
+    geolocationStore.updateCoords({ lat: coords.latitude, lng: coords.longitude })
   }
 
   const error = () => {}

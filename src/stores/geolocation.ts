@@ -3,7 +3,7 @@ import { defineStore } from 'pinia'
 import type { Coordinates } from '@/types'
 
 export const useGeolocationStore = defineStore('geolocation', () => {
-  const coords = ref<Coordinates>({ lat: 0, lon: 0 })
+  const coords = ref<Coordinates>({ lat: 0, lng: 0 })
 
   const coordsArray = computed(() => Object.values(coords.value))
 

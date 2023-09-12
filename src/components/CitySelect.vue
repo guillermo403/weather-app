@@ -35,7 +35,7 @@ onClickOutside(citySelect, () => (showSelect.value = false))
         :key="index"
         @click="
           () => {
-            geolocationStore.updateCoords({ lat: city.lat, lon: city.lon })
+            geolocationStore.updateCoords({ lat: city.lat, lng: city.lon })
             showSelect = false
           }
         "
